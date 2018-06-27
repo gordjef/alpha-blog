@@ -1,4 +1,4 @@
-<!-- THIS CODE IS REPLACED WITH THE EMBEDDED RUBY CODE BELOW
+<!-- THIS CODE TO LINE 28 IS REPLACED WITH THE EMBEDDED RUBY CODE BELOW
 <% if @article.errors.any? %>
   <h2>The following errors prevented the article from getting created</h2>
   <ul>
@@ -26,7 +26,7 @@
 <%= link_to "Back to articles listing", articles_path %>
 
 -->
-
+<!-- UPDATE THIS CODE TO LINE 45 WITH CALL TO ERROR PARTIAL
 <% if @article.errors.any? %>
 
   <h2>The following errors prevented the article from getting created</h2>
@@ -42,7 +42,9 @@
   </ul>
 
 <% end %>
+-->
 
+<%= render 'shared/errors', obj: @article %>
 
 <div class='row'>
 
