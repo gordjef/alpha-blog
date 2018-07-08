@@ -1,0 +1,1 @@
+ <% if logged_in? && current_user == article.user %>
